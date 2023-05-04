@@ -1,0 +1,57 @@
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+}
+
+#name{
+    width: 150px;
+}
+
+#email{
+    width: 150px;
+}
+
+#tel{
+    width: 150px;
+}
+
+button{
+    margin: 15px 15px 15px 0;
+    
+}
+
+#comments{
+    height: 150px;
+    margin: 10px 0 0 0;
+    resize: none;
+    max-width: 230px;
+}
+
+
+
+
+.gradient:checked{
+  background-image: linear-gradient(to bottom, #a1e693, #48912d);
+  background-size: 100% 100%;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  align-self: center;
+  position: relative;
+}
+
+.gradient:checked::before{
+  content: "\2714";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #fff;
+}
